@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const jawabanNya = [
         { input1: 1, jawaban: 'A' },
         { input2: 2, jawaban: 'I' },
-        { input3: 3, jawaban: 'C' },
+        { input3: 3, jawaban: 'A' },
         { input4: 4, jawaban: 'O' },
-        { input5: 5, jawaban: 'S' },
+        { input5: 5, jawaban: 'P' },
         { input6: 6, jawaban: 'A' },
         { input7: 7, jawaban: 'A' },
         { input8: 8, jawaban: 'S' },
