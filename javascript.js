@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const q9 = document.getElementById("no9");
     const q10 = document.getElementById("no10");
 
-    // Set the text context for question numbers
     q1.textContent = '1';
     q2.textContent = '2';
     q3.textContent = '3';
@@ -23,44 +22,66 @@ document.addEventListener("DOMContentLoaded", () => {
     q9.textContent = '9';
     q10.textContent = '10';
 
-    // Example correct answers array
-    const correctAnswers = [
-        { question: 1, answer: 'AI' },
-        { question: 2, answer: 'WWW' },
-        { question: 3, answer: 'SQL' },
-        { question: 4, answer: 'HTML' },
-        { question: 5, answer: 'PL/SQL' },
-        { question: 6, answer: 'PC' },
-        { question: 7, answer: 'Cloud' },
-        { question: 8, answer: 'RAM' },
-        { question: 9, answer: 'Data' },
-        { question: 10, answer: 'API' }
+    const jawabanNya = [
+        { input1: 1, jawaban: 'A' },
+        { input2: 2, jawaban: 'I' },
+        { input3: 3, jawaban: 'C' },
+        { input4: 4, jawaban: 'O' },
+        { input5: 5, jawaban: 'S' },
+        { input6: 6, jawaban: 'A' },
+        { input7: 7, jawaban: 'A' },
+        { input8: 8, jawaban: 'S' },
+        { input9: 9, jawaban: 'T' },
+        { input10: 10, jawaban: 'W' },
+        { input11: 11, jawaban: 'E' },
+        { input11: 12, jawaban: 'A' },
+        { input11: 13, jawaban: 'K' },
+        { input11: 14, jawaban: 'D' },
+        { input11: 15, jawaban: 'S' },
+        { input11: 16, jawaban: 'C' },
+        { input11: 17, jawaban: 'L' },
+        { input11: 18, jawaban: 'U' },
+        { input11: 19, jawaban: 'T' },
+        { input11: 20, jawaban: 'C' },
+        { input11: 21, jawaban: 'H' },
+        { input11: 22, jawaban: 'C' },
+        { input11: 23, jawaban: 'E' },
+        { input11: 24, jawaban: 'N' },
+        { input11: 25, jawaban: 'C' },
+        { input11: 26, jawaban: 'R' },
+        { input11: 27, jawaban: 'Y' },
+        { input11: 28, jawaban: 'P' },
+        { input11: 29, jawaban: 'T' },
+        { input11: 30, jawaban: 'D' },
+        { input11: 31, jawaban: 'P' },
     ];
 
-    // Validate answers on button click
+
     document.getElementById("validate-button").addEventListener("click", () => {
         let score = 0;
         const inputs = document.querySelectorAll('input[type="text"]');
 
         inputs.forEach((input, index) => {
-            const userAnswer = input.value.toUpperCase(); // Get user input and convert to uppercase
 
-            // Check if index is within bounds of correctAnswers array
-            if (index < correctAnswers.length) {
-                const correctAnswer = correctAnswers[index].answer; // Get correct answer from array
+            const userJawab = input.value.toUpperCase();
 
-                if (userAnswer === correctAnswer) {
+            if (index < jawabanNya.length) {
+
+                const jawabanBenar = jawabanNya[index].jawaban;
+
+                if (userJawab === "") {
+                    input.style.backgroundColor = 'lightcoral';
+                } else if (userJawab === jawabanBenar) {
                     score++;
-                    input.style.backgroundColor = 'lightgreen'; // Highlight correct answers
+                    input.style.backgroundColor = 'lightgreen';
                 } else {
-                    input.style.backgroundColor = 'lightcoral'; // Highlight incorrect answers
+                    score--;
+                    input.style.backgroundColor = 'lightcoral';
                 }
-            } else {
-                console.error(`Index ${index} is out of bounds for correctAnswers array.`);
             }
         });
 
-        // Update the score display
-        document.querySelector('.footer h3').textContent = `Score: ${score}`;
+        document.querySelector('.skornya h3').textContent = `Score: ${score}`;
     });
+
 });
