@@ -288,6 +288,7 @@ body {
     }
     
     .section {
+        width: 100%;
         margin-top: 10px;
         background-color: gray;
         display: flex;
@@ -305,6 +306,7 @@ body {
     
     .section table {
         width: 100%;
+        box-sizing: border-box;
         max-width: 600px;
     }
     
