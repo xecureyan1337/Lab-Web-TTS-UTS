@@ -233,7 +233,6 @@ body {
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         width: 100%;
-        max-width: 600px;
         margin: 0 auto;
         box-shadow: 0px 5px 10px black;
         box-sizing: border-box;
@@ -289,7 +288,6 @@ body {
     
     .section {
         width: 100%;
-        max-width: 600px;
         margin-top: 10px;
         margin: 0 auto;
         background-color: gray;
