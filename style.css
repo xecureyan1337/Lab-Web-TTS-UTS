@@ -219,7 +219,7 @@ body {
     color: white;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
     body {
         margin: 0;
         padding: 0;
@@ -227,6 +227,8 @@ body {
     }
     
     .header {
+        width: 100%;
+        padding: 10px;
         background: orange;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -286,11 +288,11 @@ body {
     }
     
     .section {
-        margin-top: 20px;
+        margin-top: 10px;
         background-color: gray;
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
+        flex-direction: column;
+        align-items: center;
     }
     
     .section .table-box {
@@ -302,8 +304,8 @@ body {
     }
     
     .section table {
-        width: 100%; /* Make table responsive */
-        max-width: 600px; /* Set a max width for the table */
+        width: 100%;
+        max-width: 600px;
     }
     
     .section table .box {
@@ -323,7 +325,7 @@ body {
     
     .section .tanya-datar,
     .section .tanya-turun {
-        margin: 0 auto;
+        margin: 10px;
     }
     
     .section h2 {
@@ -331,18 +333,19 @@ body {
         color: orange;
         background-color: black;
         padding: 10px;
+        font-size: 18px;
         border-radius: 10px;
         font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 20px; /* Adjusted for smaller screens */
+        margin-bottom: 20px;
     }
     
     .section p {
         background-color: white;
         padding: 5px;
         border-radius: 5px;
-        margin-top: 10px; /* Adjusted for smaller screens */
+        margin-top: 10px;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px; /* Adjusted for smaller screens */
+        font-size: 14px;
         box-shadow: 0px 3px 3px black;
     }
     
@@ -369,13 +372,13 @@ body {
     .skornya h3 {
         text-align: center;
     }
-    
+
     #validate-button {
         background-color: black;
         width: 100%;
         box-sizing: border-box;
-        font-size: 20px;
-        padding: 20px;
+        font-size: 18px;
+        padding: 10px;
         cursor: pointer;
         font-family: "Sixtyfour Convergence", serif;
         border: none;
@@ -390,40 +393,5 @@ body {
         padding: 15px;
         cursor: pointer;
         color: white;
-    }
-    
-    /* Media queries for mobile layout */
-    @media only screen and (max-width: 768px) {
-        .header {
-            width: 100%;
-            padding: 10px;
-        }
-    
-        .section {
-            margin-top: 10px;
-        }
-    
-        .section table {
-            font-size: 14px;
-        }
-    
-        .section .tanya-datar,
-        .section .tanya-turun {
-            margin: 10px;
-        }
-    
-        .section h2 {
-            font-size: 18px;
-        }
-    
-        .section p {
-            font-size: 14px;
-        }
-    
-        #validate-button {
-            font-size: 18px;
-            width: 100%;
-            padding: 10px;
-        }
     }
 }
