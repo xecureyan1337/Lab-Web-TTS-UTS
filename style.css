@@ -292,7 +292,6 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
     }
     
     .section .table-box {
@@ -311,9 +310,9 @@ body {
     }
     
     .section table .box {
-        width: 30px;
+        width: 20px;
         font-size: 16px;
-        height: 30px;
+        height: 20px;
         background-color: black;
         text-transform: uppercase;
     }
@@ -365,10 +364,10 @@ body {
         font-weight: bold;
         padding: 2px;
     }
-    
+
     .input-box input {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         text-align: center;
         font-size: 20px;
     }
@@ -407,7 +406,7 @@ body {
     
     .section table .box,
     .section table .input-box {
-        width: 25px;
-        height: 25px;
+        width: 10px;
+        height: 10px;
     }
 }
