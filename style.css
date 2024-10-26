@@ -307,16 +307,19 @@ body {
     .section table {
         width: 100%;
         box-sizing: border-box;
+        max-width: 100%;
     }
     
     .section table .box {
         width: 40px;
+        font-size: 16px;
         height: 40px;
         background-color: black;
         text-transform: uppercase;
     }
     
     .section table .input-box {
+        font-size: 16px;
         position: relative;
         width: 30px;
         height: 30px;
