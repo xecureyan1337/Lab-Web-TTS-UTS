@@ -307,7 +307,7 @@ body {
     .section table {
         width: 100%;
         box-sizing: border-box;
-        max-width: 600px;
+        /* max-width: 600px; */
     }
     
     .section table .box {
