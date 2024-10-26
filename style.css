@@ -320,8 +320,8 @@ body {
     .section table .input-box {
         font-size: 16px;
         position: relative;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         border: 3px solid black;
         text-transform: uppercase;
     }
