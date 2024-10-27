@@ -72,18 +72,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (userJawab === "") {
                     input.style.backgroundColor = 'lightcoral';
                 } else if (userJawab === jawabanBenar) {
-                    score++;
+                    score+=3;
                     input.style.backgroundColor = 'lightgreen';
                 } else {
-                    score--;
+                    score-=3;
                     input.style.backgroundColor = 'lightcoral';
                 }
             }
         });
 
-        score = (scrore * 3) + 7
-
-        document.querySelector('.skornya h3').textContent = `Score: ${score}`;
+        document.querySelector('.skornya h3').textContent = `Score: ${score+7}`;
     });
 
 });
