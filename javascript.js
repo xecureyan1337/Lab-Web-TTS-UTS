@@ -81,7 +81,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        document.querySelector('.skornya h3').textContent = `Score: ${score*3+7}`;
+        score = (scrore * 3) + 7
+
+        document.querySelector('.skornya h3').textContent = `Score: ${score}`;
     });
 
 });
